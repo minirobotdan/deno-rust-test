@@ -11,6 +11,14 @@ mod tests {
     }
 }
 
+/// Prints Hello, World!
+fn main() {
+    println!("Hello, {name}!", name="World");
+    println!("My name is {0}, {1} {0}", "Bond", "James");
+    println!("Pi is roughly {0:.3}", 3.142)
+}
+
+
 #[no_mangle]
 pub extern "C" fn square(x: u32) -> u32 {
     x * x
